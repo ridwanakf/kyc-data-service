@@ -31,8 +31,8 @@ func (k *KTPService) GetDataPendudukByNoKTP(w http.ResponseWriter, r *http.Reque
 		log.Printf("[service][GetDataPendudukByNoKTP] fail to get data :%+v\n", err)
 		helper.RenderJSON(w, []byte(`
 		{
-			status: "failed",
-			message: "ktp not found!"
+			"status": "failed",
+			"message": "ktp not found!"
 		}
 		`), http.StatusOK)
 		return
@@ -68,7 +68,7 @@ func (k *KTPService) InsertDataPenduduk(w http.ResponseWriter, r *http.Request, 
 	defer r.Body.Close()
 	if err != nil {
 		helper.RenderJSON(w, []byte(`
-			message: "Failed to read body"
+			"message": "Failed to read body"
 		`), http.StatusBadRequest)
 		return
 	}
@@ -90,7 +90,7 @@ func (k *KTPService) UpdateDataPenduduk(w http.ResponseWriter, r *http.Request, 
 	defer r.Body.Close()
 	if err != nil {
 		helper.RenderJSON(w, []byte(`
-			message: "Failed to read body"
+			"message": "Failed to read body"
 		`), http.StatusBadRequest)
 		return
 	}
