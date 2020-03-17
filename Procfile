@@ -1,1 +1,1 @@
-web: bin/kyc-data-service
+web: bin/cmd

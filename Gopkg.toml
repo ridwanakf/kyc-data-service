@@ -58,7 +58,7 @@
   unused-packages = true
 
 [metadata.heroku]
-  root-package = "github.com/ridwanakf/nadc-intro-to-rest"
+  root-package = "github.com/ridwanakf/kyc-data-service"
   go-version = "go1.13.6"
   install = [ "./..." ]
   ensure = true
