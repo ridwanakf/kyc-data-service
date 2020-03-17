@@ -78,7 +78,7 @@ func initDB(cfg config.Config) (*sql.DB, error) {
 	}
 
 	// Initialize SQL DB
-	db, err := sql.Open(cfg.DB.Driver, cfg.DB.Address)
+	db, err := sql.Open(cfg.DB.Driver, dbAddress)
 	if err != nil {
 		return nil, err
 	}
