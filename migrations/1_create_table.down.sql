@@ -1,0 +1,1 @@
+DROP TABLE public.kyc_mst_ktp
