@@ -3,7 +3,7 @@
 -- Create Table
 
 CREATE TABLE public.kyc_mst_ktp (
-	no_ktp varchar(50) NOT NULL,
+	no_ktp varchar(50) NOT NULL PRIMARY KEY,
 	name varchar(250) NULL DEFAULT '',
 	birth_place varchar(250) NULL DEFAULT '',
 	birth_date date NULL,
